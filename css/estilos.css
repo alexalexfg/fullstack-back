@@ -1,0 +1,58 @@
+
+
+*{
+    font-family: Verdana;
+    
+}
+
+
+
+
+img {
+
+    background-color:red;
+    float: left ;
+
+}
+
+.titulo {
+
+    text-align: left;
+}
+
+
+.cliente{
+    
+    padding: 15px;
+    width: 400px;
+    background-color: #55ccff;
+
+}
+
+.pedido{
+
+    padding: 15px;
+    display: inline-block;
+    background-color: #40ccbb;
+    width: 400px;
+    font-size: small;
+   
+}
+
+.formulario{
+    display: block;
+    padding: 10px;
+ }  
+
+.datos{
+    display: inline-block;
+    width: 150px;
+    padding-bottom: 10px;
+    font-size: small;
+	 }
+
+#alertas {
+
+    color: red;
+}
+     

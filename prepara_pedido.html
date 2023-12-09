@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas Full Stack</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-3.6.0.min.js"></script> 
+</head>
+
+<body>
+    <div class="logo">
+    <img src="images/logoPizza.png" alt="logoPizza"/>   
+    </div>
+    <br> 
+    <div class="titulo">
+        <h1>Pizza Full StacK</h1>
+    </div>
+     <br> 
+    <br> 
+    <br> 
+    <br>
+    <form method ="POST" id="formulario01" action="http://localhost:5000/pizza"  target="_blank">   
+    <div class="cliente">   
+    <h3>Datos del Cliente</h3>
+    <div class="formulario" >
+    <div id ="alertas"></div>
+        <span class = "error">Los campos nombre y apellidos están vacíos</span> <br>
+        <span class = "errorNombre">El campo nombre está vacío</span> <br>
+        <span class = "errorApellido">El campo apellido está vacío</span>
+        <div >
+            <label id="nombre" class="datos" for="nombreDelCliente">Nombre del cliente</label>
+            <input type="text" id="nombreDelCliente" name="nombreDelCliente"/>
+        </div>
+        <div >
+            <label id="apellido" class="datos" for="apellidoDelCliente">Apellidos del cliente</label>
+            <input type="text" id="apellidoDelCliente" name="apellidoDelCliente"/>  
+        </div>
+        <div >
+            <label class="datos" for="telefonoDelCliente">Telefono del cliente</label>
+            <input type="tel" id="telefonoDelCliente" name="telefono"/>  
+        </div>
+        <div>
+            <label class="datos" for="fechadeNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechadeNacimiento" name="fecha"/>
+        </div>
+
+        <div>
+            <label class="datos" for="direccionPostal">Dirección postal</label>
+            <input type="text" id="direccionPostal" name="direccion"/>
+        </div>
+ <!--   </form>-->
+    </div> 
+</div>  
+<br>
+<br> 
+ <div class="pedido"> 
+    <h3>Datos del Pedido</h3>
+   
+    <!--     <form method ="post"> -->
+    
+        <label  id="tamano"><b>Tamaño Pizza</b></label>
+        <input type="radio" name="tamano" value="h"> Pequeña
+        <input type="radio" name="tamano" value="h"> Mediana
+        <input type="radio" name="tamano" value="m"> Grande
+        
+        <p>
+            <label id="ingredientes" style="font-weight: 600;">Seleccione los ingredientes</label>
+        </p>   
+            <input type="checkbox" id="jamonYork"  value="JamonYork">
+            <label for="jamonYork"> Jamon York</label><br>
+            <input type="checkbox" id="champinonones"  value="Champinones">
+            <label for="champinonones">Champiñones</label><br>
+            <input type="checkbox" id="pepperoni" value="Pepperoni">
+            <label for="pepperoni"> Pepperoni</label><br>
+            <input type="checkbox" id="aceitunas" value="Aceitunas">
+            <label for="aceitunas"> Aceitunas</label>
+        <br>
+        <br>
+
+        <button type="reset">Limpiar</button>
+        <button id="enviar" type="submit" value="Enviar">Enviar</button>  
+            
+ <!--    </form>  -->
+    </div>
+  </form>
+</body>
+</html>
+<!--<script src="js/pedido.js"></script> -->
+<script src="js/pedido_jquery.js"></script>
