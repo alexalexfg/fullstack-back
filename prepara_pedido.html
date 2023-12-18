@@ -59,12 +59,14 @@
    
     <!--     <form method ="post"> -->
     
-        <label  id="tamano"><b>Tamaño Pizza</b></label>
-        <input type="radio" name="pequeña" value="S"> Pequeña
-        <input type="radio" name="mediana" value="M"> Mediana
-        <input type="radio" name="grande" value="L"> Grande
-        <input type="radio" name="xxl" value="XXL"> XXL
-        
+        <select name="tamano" id="tamano"><div  id="tamanoPizza"> <script src="js/script.js"></script></div>
+            <option value="XXL">XXL</option>
+            <option value="L">Grande</option>
+            <option value="M">Mediana</option>
+            <option value="S">Pequeña</option>
+        </select>
+        <span id="resultado_tamano"></span>
+       
         <p>
             <label id="ingredientes" style="font-weight: 600;">Seleccione los ingredientes</label>
         </p>   
@@ -85,7 +87,8 @@
  <!--    </form>  -->
     </div>
   </form>
+  <script src="js/pedido_jquery.js"></script>
 </body>
 </html>
 <!--<script src="js/pedido.js"></script> -->
-<script src="js/pedido_jquery.js"></script>
+<!--<script src="js/pedido_jquery.js"></script>-->
